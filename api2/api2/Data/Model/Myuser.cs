@@ -11,15 +11,15 @@ namespace api2.Data.Model
 
         [Required]
         [MaxLength(50)]
-        public string Name { get; set; }
+        public required string Name { get; set; }
 
         public DateTime? BirthDate { get; set; }
 
         [Required]
         [MaxLength(17)]
-        public string CellPhone { get; set; }
+        public required string CellPhone { get; set; }
 
         [MaxLength(50)]
-        public string UserID { get; set; }
+        public string? UserID { get; set; }
     }
 }

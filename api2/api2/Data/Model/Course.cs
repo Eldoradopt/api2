@@ -10,10 +10,12 @@ namespace api2.Data.Model
 
         [Required]
         [MaxLength(30)]
-        public string Name { get; set; }
-
+        public required string Name { get; set; }
         public int CurricularYear { get; set; }
 
         public int Semester { get; set; }
+
+
+
     }
 }
